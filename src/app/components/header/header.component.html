@@ -1,0 +1,26 @@
+<div class="allNav">
+    <div class=" navbar-brand">SURASHOP <fa-icon [icon]=" faShoppingBag"></fa-icon>
+    </div>
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link active" routerLink="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="products">Products</a></li>
+    </ul>
+    <div class="" *ngIf="hasrout('/home', '/products')">
+        <div class="nav nav-pills">
+            <li class="nav-item">
+                <a style=" font-size: 18px" routerLink="cart" class="nav-link">
+                    <fa-icon [icon]="faCartArrowDown"></fa-icon>
+                    <div style="font-size: 10px;" class="badge">{{totalItem}}</div>
+                </a>
+            </li>
+            <li class="nav-item"><a  class="left nav-link">
+                    <fa-icon style="padding-right:10px ; font-size: 18px" [icon]="faSearch"></fa-icon>
+                    <div class="form-group">
+                        <input type="search" [(ngModel)]="searchTerm" (keyup)="search($event)" class="form-control"
+                            placeholder="Search by product title">
+                    </div>
+                </a></li>
+        </div>
+    </div>
+</div>

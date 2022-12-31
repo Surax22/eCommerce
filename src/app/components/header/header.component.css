@@ -1,0 +1,47 @@
+.allNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.badge{
+    color: red;
+    background-color:#fff;
+}
+.navbar-brand{
+    display: flex;
+}
+.nav{
+    display: flex;
+    margin-left:250px ;
+}
+.left{
+   display: flex;
+   margin-left:0px ;
+
+}
+/* .nav-left{
+    margin-left:250px ;
+} */
+@media (max-width:450px){
+    .allNav{
+        align-items: center;
+        display: block;
+    }
+    .nav{
+        margin-left:0px ;
+        display: block;
+    }
+   .left{
+    display: block;
+
+   }
+}
+@media (max-width:1150px){
+    .nav{
+        margin-left:0px ;
+    }
+}
+@media (max-width:450px){
+    .nav{
+        margin-left:0px ;
+    }
+}

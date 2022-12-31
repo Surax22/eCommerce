@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <app-banner></app-banner>
+
+        <div>
+            <div class="category">
+                <h4 href="#">Our Categories </h4>
+                <div class="cat">
+                    <div *ngFor="let item of findCategory ">
+                        <img src="{{item.cat_image}}" />
+                        <div>
+                            <a type="button" style="cursor: pointer;"
+                                (click)='filter(item.category)'>{{item.category}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a routerLink="/products">Explore Popular Brands </a>
+            <a routerLink="/products"><span>See all <fa-icon [icon]="faArrowRight"></fa-icon></span></a>
+            <div class="pro">
+                <div *ngFor="let item of filterCategory | filter:searchKey: 'name'; let i=index">
+                    <div *ngIf="i < 4">
+                        <div class="product">
+                            <div class="card-deck pro">
+                                <div class="card">
+                                    <img src="{{item.image}}" class="card-img-top" alt="{{item.name}}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{item.name}}</h5>
+                                        <p class="card-text">{{item.price}}$</p>
+                                        <button class="btn btn-primary" (click)="addtoCart(item)">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-banner></app-banner>
+    </div>

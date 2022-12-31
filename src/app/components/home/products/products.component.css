@@ -1,0 +1,26 @@
+ .product{
+    margin: 40px;
+
+}
+.pro
+{
+	display: inline-block;
+	padding: 20px;;
+    margin-top: 5px;   
+}
+
+.pro img {
+    width: 200px;
+	height: 150px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+   
+  }
+ h2{
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,79 @@
+{
+  "products": [
+    {        
+      "image": "../../../assets/image/la2.jpg",
+      "name": "Lenov",
+      "category": "slitly used",
+      "price": 1900
+    },
+    {        
+      "image": "../../../assets/image/la3.jpg",
+      "name": "Hp",
+      "category": "slitly used",
+      "price": 2000
+
+    },
+    {        
+      "image": "../../../assets/image/la5.jpg",
+      "name": "Apple",
+      "category": "leatest",
+      "price": 1800
+    },
+    {        
+      "image": "../../../assets/image/la.jpg",
+      "name": "Toshiba",
+      "category": "old",
+      "price": 2100
+    },
+    {        
+      "image": "../../../assets/image/la4.jpg",
+      "name": "Assus",
+      "category": "old",
+      "price": 1700
+    },
+    {        
+      "image": "../../../assets/image/la2.jpg",
+      "name": "Lenov",
+      "category": "slitly used",
+      "price": 1900
+    },
+    {        
+      "image": "../../../assets/image/la3.jpg",
+      "name": "Hp",
+      "category": "slitly used",
+      "price": 2000
+
+    },
+    {        
+      "image": "../../../assets/image/la5.jpg",
+      "name": "Apple",
+      "category": "leatest",
+      "price": 1800
+    },
+    {        
+      "image": "../../../assets/image/la.jpg",
+      "name": "Toshiba",
+      "category": "old",
+      "price": 2100
+    },
+    {        
+      "image": "../../../assets/image/la4.jpg",
+      "name": "Assus",
+      "category": "old",
+      "price": 1700
+    }
+  ],
+  "categories":[{
+    "category": "old",
+    "cat_image": "../../../assets/image/la4.jpg"
+  },
+  {
+    "category": "slitly used",
+    "cat_image": "../../../assets/image/la.jpg"
+  },
+  {
+    "category": "leatest",
+    "cat_image": "../../../assets/image/la3.jpg"
+  }
+]
+}
